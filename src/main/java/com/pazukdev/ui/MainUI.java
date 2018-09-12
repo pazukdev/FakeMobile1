@@ -89,7 +89,7 @@ public class MainUI extends UI {
         setContent(pcScreenLayout);
 
         navigator = new Navigator(this, content);
-        mainLayout = new MainLayout(navigator, backButton, bearingsLayout);
+        mainLayout = new MainLayout(navigator, backButton);
         setButtons();
         navigator.addView("main", mainLayout);
         navigator.addView("bearings", bearingsLayout);

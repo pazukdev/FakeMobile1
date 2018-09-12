@@ -65,7 +65,7 @@ public class BearingsService {
 			final String[] bearingsData = new String[] {
 					"207;ball;Engine;2",
 					"205;ball;Engine;1",
-					"364708 ДМ;roller;Engine;2",
+					"364708 DM;roller;Engine;2",
 					"7201234-A;plain;Engine;2",
 					"7201107;plain;Engine;1",
 					"778707;ball;Frame and wheels;2",

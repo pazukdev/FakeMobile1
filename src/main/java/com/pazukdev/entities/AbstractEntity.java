@@ -3,9 +3,7 @@ package com.pazukdev.entities;
 import javax.persistence.*;
 import java.io.Serializable;
 
-/**
- * @author Siarhei Sviarkaltsau
- */
+
 
 @MappedSuperclass
 public abstract class AbstractEntity implements Serializable, Cloneable {
@@ -42,10 +40,10 @@ public abstract class AbstractEntity implements Serializable, Cloneable {
     public Long getId() {
         return id;
     }
+
     public void setId(Long id) {
         this.id = id;
     }
-
 
     public boolean isPersisted() {
         return id != null;

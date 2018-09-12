@@ -1,6 +1,5 @@
 package com.pazukdev.ui;
 
-import com.pazukdev.entities.Bearing;
 import com.vaadin.icons.VaadinIcons;
 import com.vaadin.navigator.Navigator;
 import com.vaadin.navigator.View;
@@ -13,7 +12,7 @@ public class MainLayout extends VerticalLayout implements View {
 
     Button bearingsButton = new Button("Bearings");
 
-    public MainLayout(Navigator navigator, Button backButton, BearingsLayout bearingsLayout) {
+    public MainLayout(Navigator navigator, Button backButton) {
         setSizeFull();
         addComponents(bearingsButton);
         setComponentAlignment(bearingsButton, Alignment.MIDDLE_CENTER);
