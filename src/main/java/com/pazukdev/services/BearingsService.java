@@ -94,8 +94,7 @@ public class BearingsService {
 					"136;roller;Zzzfoobar;1",
 					"137;roller;Zzzfoobar;1",
 					"138;roller;Zzzfoobar;1",
-					"139;roller;Zzzfoobar;1",
-					"140;roller;Zzzfoobar;1"
+					"139;roller;Zzzfoobar;1"
 			};
 
 			for (String bearingSourceString : bearingsData) {
