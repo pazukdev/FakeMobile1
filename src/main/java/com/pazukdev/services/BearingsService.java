@@ -74,7 +74,28 @@ public class BearingsService {
 					"200;ball;Generator;1",
 					"304;ball;Gearbox;2",
 					"12204;roller;Gearbox;1",
-					"948066;ball;Gearbox;1"
+					"948066;ball;Gearbox;1",
+					"120;roller;Zzzfoobar;1",
+					"121;roller;Zzzfoobar;1",
+					"122;roller;Zzzfoobar;1",
+					"123;roller;Zzzfoobar;1",
+					"124;roller;Zzzfoobar;1",
+					"125;roller;Zzzfoobar;1",
+					"126;roller;Zzzfoobar;1",
+					"127;roller;Zzzfoobar;1",
+					"128;roller;Zzzfoobar;1",
+					"129;roller;Zzzfoobar;1",
+					"130;roller;Zzzfoobar;1",
+					"131;roller;Zzzfoobar;1",
+					"132;roller;Zzzfoobar;1",
+					"133;roller;Zzzfoobar;1",
+					"134;roller;Zzzfoobar;1",
+					"135;roller;Zzzfoobar;1",
+					"136;roller;Zzzfoobar;1",
+					"137;roller;Zzzfoobar;1",
+					"138;roller;Zzzfoobar;1",
+					"139;roller;Zzzfoobar;1",
+					"140;roller;Zzzfoobar;1"
 			};
 
 			for (String bearingSourceString : bearingsData) {
