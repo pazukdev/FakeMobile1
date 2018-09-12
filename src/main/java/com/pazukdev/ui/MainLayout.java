@@ -16,8 +16,8 @@ public class MainLayout extends VerticalLayout implements View {
         setSizeFull();
         addComponents(bearingsButton);
         setComponentAlignment(bearingsButton, Alignment.MIDDLE_CENTER);
+
         bearingsButton.setStyleName(ValoTheme.BUTTON_FRIENDLY);
-        //bearingsButton.setStyleName(ValoTheme.BUTTON_HUGE);
         bearingsButton.setWidth("320px");
         bearingsButton.setHeight("80px");
         bearingsButton.addClickListener(event -> {

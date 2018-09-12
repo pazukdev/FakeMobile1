@@ -18,7 +18,7 @@ public class BearingsLayout extends VerticalLayout implements View {
 
     public BearingsLayout() {
         setGrid();
-        updateHotelList();
+        updateBearingsList();
         addComponent(bearingsGrid);
         setComponentAlignment(bearingsGrid, Alignment.MIDDLE_CENTER);
         setMargin(false);
@@ -42,7 +42,7 @@ public class BearingsLayout extends VerticalLayout implements View {
     }
 
 
-    public void updateHotelList() {
+    public void updateBearingsList() {
         List<Bearing> bearings = bearingsService.findAll();
         bearingsGrid.setItems(bearings);
     }
