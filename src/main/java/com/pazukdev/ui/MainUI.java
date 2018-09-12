@@ -58,7 +58,7 @@ public class MainUI extends UI {
         actionBarTitleLayout.setMargin(false);
         actionBarTitleLayout.setSizeFull();
         actionBarTitleLayout.setComponentAlignment(pageTitle, Alignment.MIDDLE_LEFT);
-
+        actionBar.setStyleName("body");
         actionBar.addComponents(backButton, actionBarTitleLayout);
         actionBar.setComponentAlignment(backButton, Alignment.MIDDLE_LEFT);
         actionBar.setStyleName("actionBar");

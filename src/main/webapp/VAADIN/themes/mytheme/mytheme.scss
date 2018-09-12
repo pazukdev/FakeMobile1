@@ -13,10 +13,11 @@
 
 // Affects the color of some component elements, e.g Button, Panel title, etc
 //$v-background-color: hsl(210, 0%, 98%);
+//$v-background-color: #000000;
 
 // Affects the color of content areas, e.g  Panel and Window content, TextField input etc
 //$v-app-background-color: $v-background-color;
-//$v-app-background-color: #000000;
+//$v-app-background-color: #212121;
 
 // Affects the visual appearance of all components
 //$v-gradient: v-linear 8%;
@@ -26,12 +27,17 @@
 // Defines colors for indicating status (focus, success, failure)
 //$v-focus-color: valo-focus-color(); // Calculates a suitable color automatically
 //$v-friendly-color: #2c9720;
-$v-friendly-color: #525252;
-$v-error-indicator-color: #607d8b;
+
 //$v-error-indicator-color: #ed473b;
 
 // For more information, see: https://vaadin.com/book/-/page/themes.valo.html
 // Example variants can be copy/pasted from https://vaadin.com/wiki/-/wiki/Main/Valo+Examples
+
+
+$v-friendly-color: #727272;
+$v-error-indicator-color: #607d8b;
+$v-grid-row-background-color: #212121;
+$v-grid-header-background-color: #212121;
 
 
 @import "../valo/valo.scss";
@@ -64,5 +70,6 @@ $v-error-indicator-color: #607d8b;
     background-color:#525252;
     //font-size: 16px;
   }
+
 
 }

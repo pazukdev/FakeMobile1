@@ -6,6 +6,7 @@ import com.pazukdev.services.BearingsService;
 import com.vaadin.navigator.View;
 import com.vaadin.shared.data.sort.SortDirection;
 import com.vaadin.ui.*;
+import com.vaadin.ui.themes.ValoTheme;
 
 import java.util.List;
 
@@ -14,6 +15,7 @@ public class BearingsLayout extends VerticalLayout implements View {
 
     private BearingsService bearingsService = BearingsService.getInstance();
     private Grid<Bearing> bearingsGrid =new Grid<>(Bearing.class);
+    //private Grid<Bearing> bearingsGrid =new Grid<>();
 
 
     public BearingsLayout() {
@@ -39,6 +41,7 @@ public class BearingsLayout extends VerticalLayout implements View {
                 "majorLocation",
                 "quantity"
         );
+        bearingsGrid.getColumn("quantity").setCaption("Pcs");
     }
 
 
