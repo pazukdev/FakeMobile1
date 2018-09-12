@@ -34,9 +34,8 @@ public class MainUI extends UI {
         @Bean
         public static ServiceProvider getEntityService() {
             return new ServiceProvider();
-        };
+        }
     }
-
 
     private Navigator navigator;
 
@@ -46,17 +45,11 @@ public class MainUI extends UI {
     private HorizontalLayout actionBarTitleLayout = new HorizontalLayout();
     private HorizontalLayout content = new HorizontalLayout();
 
-    MainLayout mainLayout;
-    BearingsLayout bearingsLayout = new BearingsLayout();
-
-
+    private MainLayout mainLayout;
+    private BearingsLayout bearingsLayout = new BearingsLayout();
 
     private Label pageTitle = new Label("Bearings usage");
     private Button backButton = new Button();
-
-
-
-
 
     @Override
     protected void init(VaadinRequest vaadinRequest) {
@@ -99,7 +92,6 @@ public class MainUI extends UI {
         navigator.addView("main", mainLayout);
         navigator.addView("bearings", bearingsLayout);
         navigator.navigateTo("main");
-
     }
 
 
@@ -107,7 +99,6 @@ public class MainUI extends UI {
         // back button
         backButton.addStyleNames(ValoTheme.BUTTON_HUGE, ValoTheme.BUTTON_BORDERLESS);
         backButton.setId("back_button");
-        backButton.setWidth("50px");
         backButton.setEnabled(false);
         backButton.setIcon(null);
         backButton.setDescription("Back");
@@ -121,7 +112,6 @@ public class MainUI extends UI {
 
     @WebServlet(urlPatterns = "/*", name = "MyUIServlet", asyncSupported = true)
     @VaadinServletConfiguration(ui = MainUI.class, productionMode = false)
-    public static class MyUIServlet extends SpringVaadinServlet {
-    }
+    public static class MyUIServlet extends SpringVaadinServlet {}
 
 }
