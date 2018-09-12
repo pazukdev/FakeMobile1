@@ -2,10 +2,10 @@ package com.pazukdev.ui;
 
 import javax.servlet.annotation.WebListener;
 import javax.servlet.annotation.WebServlet;
+
+import com.pazukdev.services.ServiceProvider;
 import com.vaadin.annotations.Theme;
-import com.vaadin.annotations.Title;
 import com.vaadin.annotations.VaadinServletConfiguration;
-import com.vaadin.icons.VaadinIcons;
 import com.vaadin.navigator.Navigator;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.spring.annotation.EnableVaadin;
@@ -14,6 +14,7 @@ import com.vaadin.spring.server.SpringVaadinServlet;
 import com.vaadin.ui.*;
 
 import com.vaadin.ui.themes.ValoTheme;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.context.ContextLoaderListener;
 
@@ -30,6 +31,10 @@ public class MainUI extends UI {
     @Configuration
     @EnableVaadin
     public static class MyConfiguration {
+        @Bean
+        public static ServiceProvider getEntityService() {
+            return new ServiceProvider();
+        };
     }
 
 
@@ -100,13 +105,11 @@ public class MainUI extends UI {
 
     private void setButtons() {
         // back button
-        //backButton.setStyleName(ValoTheme.BUTTON_BORDERLESS);
-        backButton.setStyleName(ValoTheme.BUTTON_DANGER);
+        backButton.addStyleNames(ValoTheme.BUTTON_HUGE, ValoTheme.BUTTON_BORDERLESS);
         backButton.setId("back_button");
         backButton.setWidth("50px");
         backButton.setEnabled(false);
         backButton.setIcon(null);
-        backButton.setStyleName("actionBarButton");
         backButton.setDescription("Back");
         backButton.addClickListener(event -> {
             backButton.setEnabled(false);

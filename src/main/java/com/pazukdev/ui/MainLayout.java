@@ -17,9 +17,7 @@ public class MainLayout extends VerticalLayout implements View {
         addComponents(bearingsButton);
         setComponentAlignment(bearingsButton, Alignment.MIDDLE_CENTER);
 
-        bearingsButton.setStyleName(ValoTheme.BUTTON_FRIENDLY);
-        bearingsButton.setWidth("320px");
-        bearingsButton.setHeight("80px");
+        bearingsButton.addStyleNames(ValoTheme.BUTTON_FRIENDLY, ValoTheme.BUTTON_HUGE);
         bearingsButton.addClickListener(event -> {
             backButton.setEnabled(true);
             backButton.setIcon(VaadinIcons.ARROW_LEFT);
